@@ -1,0 +1,267 @@
+/* general styles */
+body {
+  height: 100%;
+  width: 100%;
+  position:absolute;
+}
+@media screen and (max-width: 480px) {
+.lead {
+display: none;
+ position: relative;
+ margin-top: 0px;
+}
+.item{
+height:30%;
+}
+}
+.navbar-fixed-top { background-color: rgba(255,255,255,0);transition: background-color 2s ease 0s;}
+.navbar-fixed-top.opaque { background-color:#004C70 ;transition: background-color 2s ease 0s;}
+
+img.img-responsive { display: table-cell; max-width: 100%;}
+ 
+.carousel-caption h1,h3{
+ color:#fff;
+text-align: left;
+vertical-align:top; 
+background-color: transparent;
+position: static;
+}
+.item{
+max-height:600px;
+}
+.item img{
+width:100%;
+height:100%;
+}
+ 
+#products .container ul li a {
+color:#FF7F50;
+font-size:18;
+}
+#products .container ul li a:hover{
+background:#FFE5B4;
+color:#FF7F50;
+
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
+background:#fff;
+color:#FF7F50;
+}
+.social-icons{
+
+margin-left:10px;
+}
+.social-icons img{
+width:20px;
+height:20px;
+}
+ .panel-heading{
+background:#dcf0f7;
+
+}
+.panel{
+border:#004C70 solid 1px;
+}
+.panel-heading .collapse ul li a{
+color:white;
+}
+.panel-heading .collapse ul li a:hover{
+background:white;
+color:#333;
+}
+.panel-body{
+background:#F5FFFA;
+border:#ccc solid 1px;
+}
+
+.ex2 img{
+    height: 200px;
+    width: 300px;
+    margin: 15px 0;
+     -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
+ 
+.ex2 img:hover {
+ height: 233px;
+ width: 333px;
+ margin-left: -50px;
+}
+
+.modal-title{
+color:#333;
+}
+.modal-body img{
+width:200px;
+ height:200px;
+ float:left;
+}
+/* padded section */
+.pad-section {
+  padding: 50px 0;
+}
+
+.margins{
+margin-top:50px;
+margin-left:50px;
+margin-right:50px;
+
+z-index:50;
+
+}
+/* vertical-centered text */
+.text-vcenter {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.navbar{
+background:transparent;
+
+}
+
+.text-vcenter h1 {
+  font-size: 4.5em;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+.borders{
+border:#ccc solid 1px;
+border-radius:2px;
+padding:10px;
+}
+.ex1 img{
+float:left;
+margin:15px;
+-webkit-transition: margin 0.5s ease-out;
+-moz-transition: margin 0.5s ease-out;
+-o-transition: margin 0.5s ease-out;
+}
+.ex1 img:hover{
+margin-top:5px;
+color:#333;
+}
+.collapse ul li a{
+color:#F58025;
+font-size:16px;
+/* margin-left:30px; */
+}
+
+.collapse ul li a:hover{
+background:#fff;
+color:#F58025;
+border:#333 solid 1px;
+border-radius:5px;
+}
+
+h3, h4, h6{
+color:#fff;
+}
+h1,h2{
+font-family: 'Tangerine', serif; 
+font-size:52px;
+color:#fff;
+}
+
+/* additional sections */
+#home {
+ 
+  display: table;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+ 
+}
+#latest{
+display: table;
+position: relative;
+background: -webkit-linear-gradient(right, #dcf0f7,#5e9dc8,#5e9dc8, #dcf0f7); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(left,#dcf0f7,#5e9dc8,#5e9dc8, #dcf0f7); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(left,#dcf0f7,#5e9dc8,#5e9dc8, #dcf0f7); /* For Firefox 3.6 to 15 */
+background: linear-gradient(to left,#dcf0f7,#5e9dc8,#5e9dc8, #dcf0f7); /* Standard syntax (must be last) */
+margin-left:auto;
+margin-right:auto;
+margin-top:50px;
+}
+#gallery 
+	{
+		height:300px;
+	}
+
+ #about {
+background:;
+}
+
+
+#team {
+background:#c3c3c3;
+  
+}
+
+
+#services {
+  background-color:#fff ;
+  color: #666666;
+}
+
+#services .glyphicon {
+  
+  color:#f05f40;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 60px;
+  height: 140px;
+  line-height: 140px;
+  text-align: center;
+  vertical-align: middle;
+  width: 140px;
+}
+
+#contacts{
+background-color:#fff ;
+  color: #006495;
+}
+#contacts .glyphicon {
+color:#333;
+font-size:18px;
+display:table;
+display: inline-block;
+}
+
+#products {
+margin-top:30px;
+  background: #fff;
+  /* url(../images/icarus1.jpg) no-repeat center center fixed  */
+  display: table;
+  height: 800px;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#products .panel {
+  opacity: 0.85;
+}
+
+#google_map {
+  height: 200px;
+   display: table;
+    position: relative;
+ 
+}
+
+footer {
+  width:100%;
+  padding:10px;
+  background:#004C70;
+
+  
+}
+

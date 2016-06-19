@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<title>skrollr - parallax scrolling for the masses</title>
+
+	<link href="fixed-positioning.css" rel="stylesheet" type="text/css" />
+	<link href="main.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<style type="text/css">
+	body {font-family:sans-serif;}
+
+	#content {
+		width:960px;
+		background:#eee;
+		border:1px solid #444;
+		margin:1em auto;
+	}
+
+	#nav {
+		display:block;
+		padding:0;
+		margin:0;
+		width:960px;
+		background:#c3c3c3;
+		color:#eee;
+	}
+
+	#nav > li {
+		display:inline-block;
+		padding:1em;
+		margin:0;}
+	
+	
+	
+	
+	
+	</style>
+	
+</head>
+
+<body>
+
+<div id="content">
+ 
+			<nav class="navbar  navbar-fixed-top" role="navigation">
+			<div class="container-fluid">
+    
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			  </button>
+			  
+			<a class="navbar-brand" href="#">Icarus Solutions Pvt. Ltd.</a>
+	  
+			</div>
+	
+
+    <div class="collapse navbar-collapse" id="navbar-collapse-main">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#products">Products</a></li> 
+		<li><a href="#contact">Contact</a></li>
+	  </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+				
+				
+	<!-- <div id="bg1" data-0="background-position:0px 0px;" data-end="background-position:-500px -10000px;"></div>
+	<div id="bg2" data-0="background-position:0px 0px;" data-end="background-position:-500px -8000px;"></div> -->
+	<div id="bg3" data-0="background-position:0px 0px;" data-end="background-position:-500px -6000px;"></div>
+
+	<div id="progress" data-0="width:0%;background:hsl(200, 100%, 50%);" data-end="width:100%;background:hsl(920, 100%, 50%);"></div>
+	
+	
+<div id="slider" data-0="opacity:1;top:3%;transform:rotate(0deg);transform-origin:0 0;" data-500="opacity:0;top:-10%;transform:rotate(-90deg);">
+		<h1><span class="glyphicon glyphicon-italic"> </span>carus <span class="glyphicon glyphicon-usd">olutions</span> </h1>
+		<!--image slider -->
+	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+	<!-- Indicators -->
+	<ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner img-rounded" role="listbox">
+    <div class="item active">
+      <img src="images/office.jpg" alt="...">
+      <div class="carousel-caption">
+	  <h3> Icarus Solutions </h3>
+        <p> <strong> redefining limits... </strong></p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="images/office2.jpg" alt="...">
+      <div class="carousel-caption">
+		<h3>Office hours</h3>
+         <p><strong>  </strong></p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="images/officeX.jpg" alt="...">
+      <div class="carousel-caption">
+		<h3>work office </h3>
+        <p><strong> </strong></p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div><!--end of image slider-->
+		
+		
+</div>
+
+<div id="about" data-500="transform:scale(0) rotate(0deg);left:15%;" data-1000="transform:scale(1) rotate(1440deg);opacity:1;" data-1600="" data-1700="transform:scale(5) rotate(3240deg);opacity:0;">
+	<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<img src="images/bg-white-icarus.jpg" width="200" height="200" class="img-rounded" alt="" align="left" />
+				</div>
+				<div class="col-sm-6">
+				<h2 style="color:white">ABOUT US</h2>
+				<p class="lead" style="color:white">We are IT based company with our major concerns on web design/development, android/ios applications and gaming. Icarus thrives for serving quality products to its customers.</p>
+			</div>
+		</div>
+	</div>
+</div><!-- end of about-->
+
+
+
+	<div id="properties" data-1700="top:100%; left:30%;" data-1900="top:0%;" data-2000="display:block;"data-2600="top:-100%;display:none;">
+	<img src="images/confused-bird.png" style="width:200px; height:200px;" class="img-rounded"  ><h2 style="color:white;">Did you know about Icarus?</h2>
+	</div> <!--end of properties-->
+	<div id="easing_wrapper" data-0="display:none;left:0%;" data-2800="display:block;" data-3500="background:rgba(0, 0, 0, 0);color[swing]:rgb(0,0,0);" data-4000="background:rgba(0,0,0,1);color:rgb(255,255,255);" data-6000="top:0%;" data-6100="top:-100%;">
+		<div id="easing" data-3200="left:100%;left:3%;" data-3600="left:25%;">
+			<p data-3200="opacity:1;font-size:100%;" data-4900="opacity:1;font-size:150%;">wanna know more about us??</p>
+			<p data-4900="opacity:0;font-size:100%;" data-5000="opacity:1;font-size:150%;">well here is something for <span data-5000="" data-5100="color[swing]:rgb(0,0,0);" data-5500="color:rgb(255,255,0);">reference.....</span> </p>
+			
+		</div>
+	</div> <!--end of easing_wrapper-->
+
+	
+	<div id="services" class="pad-section" data-6500="top:100%; left:10%;" data-7200="top:0%;" data-7500="display:block;" data-8000="top:-100%; display:none;">
+		<div class="container">
+			<h2 class="text-center" style="color:white">Our Services</h2> <hr />
+			<div class="row text-center">
+			<div class="col-sm-3 col-xs-6">
+			<span class="glyphicon glyphicon-cloud"> </span>
+			<h4 style="color:white">Service 1</h4>
+			<p>This is a demo article.This is a demo article.This is a demo article.</p>
+			</div>
+			<div class="col-sm-3 col-xs-6">
+			<span class="glyphicon glyphicon-globe" > </span>
+			<h4 style="color:white">Service 2</h4>
+			<p>This is a demo article.This is a demo article.This is a demo article.</p>
+			</div>
+			<div class="col-sm-3 col-xs-6">
+			<span class="glyphicon glyphicon-phone"> </span>
+			<h4 style="color:white">Service 3</h4>
+			<p>This is a demo article.This is a demo article.This is a demo article.</p>
+		</div>
+		<div class="col-sm-3 col-xs-6">
+        <span class="glyphicon glyphicon-hdd"> </span>
+        <h4 style="color:white">Service 4</h4>
+        <p>This is a demo article.This is a demo article.This is a demo article.</p>
+      </div>
+    </div>
+  </div>
+</div> <!--end of services -->
+
+	
+	<div id="products" class="pad-section" data-8000="top:100%; left:10%;" data-8200="top:0%;" data-8500="display:block;" data-9000="top:-100%; display:none;">
+		<div class="container">
+			<h2 class="text-center" style="color:white">PRODUCTS &nbsp;<span class="glyphicon glyphicon-briefcase"></span></h2>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="panel img-rounded">
+						<div class="panel-heading">
+						<div class="collapse navbar-collapse" id="myNavbar">
+							<ul class="nav navbar-nav">
+								<li><a data-toggle="collapse" data-parent="#accordion" href="#web"> <span class="glyphicon glyphicon-globe"></span>&nbsp;Web</a></li>
+								<li><a data-toggle="collapse" data-parent="#accordion" href="#apps"><span class="glyphicon glyphicon-phone"></span>&nbsp;Apps</a></li>
+								<li><a data-toggle="collapse" data-parent="#accordion" href="#games"><span class="glyphicon glyphicon-bishop"></span>&nbsp;Games</a></li>
+							</ul>
+						</div>
+						</div>
+						  <div class="panel-body">
+						  <div class="collapse in" id="web">
+						  <div class="col-sm-4">
+							<div class="panel panel-default">
+							<div class="panel-heading">
+							<a href="#" type="link" data-toggle="modal" data-target="#myModalW1"><h2>Web Product 1</h2></a>
+							</div>
+							<div class="panel-body ex2">
+							Some description about first product.
+							<img src="images/web_application.jpg"  width="200px" height="200px">
+							</div>
+							</div>
+						  </div>
+						  <div class="col-sm-4">
+							<div class="panel panel-default">
+							<div class="panel-heading ">
+							<a href="#" type="link" data-toggle="modal" data-target="#myModalW2"><h2>Web Product 2 </h2></a>
+							</div>
+							<div class="panel-body ex2">
+							Some description about second product.
+							<img src="images/web.jpg"  width="200px" height="200px">
+							</div>
+							</div>
+						  </div>
+						  <div class="col-sm-4">
+							<div class="panel panel-default">
+							<div class="panel-heading ">
+							<a href="#" type="link" data-toggle="modal" data-target="#myModalW3"><h2>Web Product 3 </h2></a>
+							</div>
+							<div class="panel-body ex2">
+							Some description about third product.
+							<img src="images/web_application.jpg"  width="200px" height="200px">
+							</div>
+							</div>
+						  </div>
+						  </div><!--end of web -->
+						  <div class="collapse" id="apps">
+						  <div class="col-sm-4">
+							<div class="panel panel-default">
+							<div class="panel-heading">
+							<a href="#" type="link" data-toggle="modal" data-target="#myModalA1"><h2>App Product 1 </h2></a>
+							</div>
+							<div class="panel-body ex2">
+							Some description about first product.
+							<img src="images/applications2.png"  width="200px" height="200px">
+							</div>
+							</div>
+						  </div>
+						  <div class="col-sm-4">
+							<div class="panel panel-default">
+							<div class="panel-heading">
+							<a href="#" type="link" data-toggle="modal" data-target="#myModalA2"><h2>App Product 2 </h2></a>
+							</div>
+							<div class="panel-body ex2">
+							Some description about second product.
+							<img src="images/applications1.png"  width="200px" height="200px">
+							</div>
+							</div>
+						  </div>
+						  <div class="col-sm-4">
+							<div class="panel panel-default">
+							<div class="panel-heading">
+							<a href="#" type="link" data-toggle="modal" data-target="#myModalA3"><h2>App Product 3 </h2></a>
+							</div>
+							<div class="panel-body ex2">
+							Some description about third product.
+							<img src="images/applications2.png"  width="200px" height="200px">
+							</div>
+							</div>
+						  </div>
+						  </div><!-- end of apps-->
+						  <div class="collapse" id="games">
+						  <div class="col-sm-4">
+							<div class="panel panel-default">
+							<div class="panel-heading ex2">
+							<a href="#" type="link" data-toggle="modal" data-target="#myModalG1"><h2>Game Product 1 </h2></a>
+							</div>
+							<div class="panel-body ex2">
+							Some description about first product.
+							<img src="images/games1.jpg"  width="200px" height="200px">
+							</div>
+							</div>
+						  </div>
+						  <div class="col-sm-4">
+							<div class="panel panel-default">
+							<div class="panel-heading">
+							<a href="#" type="link" data-toggle="modal" data-target="#myModalG2"><h2>Game Product 2 </h2></a>
+							</div>
+							<div class="panel-body ex2">
+							Some description about second product.
+							<img src="images/games2.jpg"  width="200px" height="200px">
+							</div>
+							</div>
+						  </div>
+						  <div class="col-sm-4">
+							<div class="panel panel-default">
+							<div class="panel-heading">
+							<a href="#" type="link" data-toggle="modal" data-target="#myModalG3"><h2>Game Product 3 </h2></a>
+							</div>
+							<div class="panel-body ex2">
+							Some description about third product.
+							<img src="images/games3.png"  width="200px" height="200px">
+							</div>
+							</div>
+						  </div>
+						  </div><!-- end of games-->
+						  </div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div> <!--end of products-->
+<!-- Modal W1-->
+<div class="modal fade" id="myModalW1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Product 1</h4>
+      </div>
+      <div class="modal-body">
+       Some description about the product.Some description about the product.Some description about the product.
+	<img src="images/web_application.jpg"  width="200px" height="200px" align="left">
+      </div>
+      <div class="modal-body">
+        Other Features of the product.
+      </div>
+	  <div class="modal-footer">
+			<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+		</div>
+    </div>
+  </div>
+</div>	
+<!-- Modal W2-->
+<div class="modal fade" id="myModalW2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Product 2</h4>
+      </div>
+      <div class="modal-body">
+        Some description about the product.Some description about the product.Some description about the product.
+	<img src="images/web.jpg"  width="200px" height="200px"  align="left">
+      </div>
+      <div class="modal-body">
+        Other Features of the product.
+      </div>
+	  <div class="modal-footer">
+			<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+	</div>
+    </div>
+  </div>
+</div>	
+<!-- Modal W3-->
+<div class="modal fade" id="myModalW3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Product 3</h4>
+      </div>
+      <div class="modal-body">
+        Some description about the product.Some description about the product.Some description about the product.
+	<img src="images/web_application.jpg"  width="200px" height="200px"  align="left">
+      </div>
+      <div class="modal-body">
+        Other Features of the product.
+      </div>
+	  <div class="modal-footer">
+			<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+		</div>
+    </div>
+  </div>
+</div>	
+	
+<!-- Modal A1-->
+<div class="modal fade" id="myModalA1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Product 1</h4>
+      </div>
+      <div class="modal-body">
+       Some description about the product.Some description about the product.Some description about the product.
+	<img src="images/applications2.png"  width="200px" height="200px" align="left">
+      </div>
+      <div class="modal-body">
+        Other Features of the product.
+      </div>
+	  <div class="modal-footer">
+			<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+		</div>
+    </div>
+  </div>
+</div>	
+<!-- Modal A2-->
+<div class="modal fade" id="myModalA2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Product 2</h4>
+      </div>
+      <div class="modal-body">
+        Some description about the product.Some description about the product.Some description about the product.
+	<img src="images/applications1.png"  width="200px" height="200px"  align="left">
+      </div>
+      <div class="modal-body">
+        Other Features of the product.
+      </div>
+	  <div class="modal-footer">
+			<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+	</div>
+    </div>
+  </div>
+</div>	
+<!-- Modal A3-->
+<div class="modal fade" id="myModalA3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Product 3</h4>
+      </div>
+      <div class="modal-body">
+        Some description about the product.Some description about the product.Some description about the product.
+	<img src="images/applications2.png"  width="200px" height="200px"  align="left">
+      </div>
+      <div class="modal-body">
+        Other Features of the product.
+      </div>
+	  <div class="modal-footer">
+			<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+		</div>
+    </div>
+  </div>
+</div>	
+
+<!-- Modal G1-->
+<div class="modal fade" id="myModalG1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Product 1</h4>
+      </div>
+      <div class="modal-body">
+       Some description about the product.Some description about the product.Some description about the product.
+	<img src="images/games1.jpg"  width="200px" height="200px" align="left">
+      </div>
+      <div class="modal-body">
+        Other Features of the product.
+      </div>
+	  <div class="modal-footer">
+			<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+		</div>
+    </div>
+  </div>
+</div>	
+<!-- Modal G2-->
+<div class="modal fade" id="myModalG2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Product 2</h4>
+      </div>
+      <div class="modal-body">
+        Some description about the product.Some description about the product.Some description about the product.
+	<img src="images/games2.jpg"  width="200px" height="200px"  align="left">
+      </div>
+      <div class="modal-body">
+        Other Features of the product.
+      </div>
+	  <div class="modal-footer">
+			<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+	</div>
+    </div>
+  </div>
+</div>	
+<!-- Modal G3-->
+<div class="modal fade" id="myModalG3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Product 3</h4>
+      </div>
+      <div class="modal-body">
+        Some description about the product.Some description about the product.Some description about the product.
+	<img src="images/games3.png"  width="200px" height="200px"  align="left">
+      </div>
+      <div class="modal-body">
+        Other Features of the product.
+      </div>
+	  <div class="modal-footer">
+			<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+		</div>
+    </div>
+  </div>
+</div>	
+	
+<div id="contact" data-9000="top[cubic]:100%;border-radius[cubic]:0em;background:rgb(192,192,192);border-width:0px;" data-11000="top:10%;border-radius:2em;background:rgb(190,190,190);border-width:10px;">
+		
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h3>Contact Us At:</h3>
+      </div>
+	
+		<div class="col-sm-6 borders">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113032.64621395394!2d85.25609251320085!3d27.708942727046708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb198a307baabf%3A0xb5137c1bf18db1ea!2sKathmandu+44600!5e0!3m2!1sen!2snp!4v1448867245713" width="100%" height="auto" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+		<div class="col-sm-4 text-center">
+		<h3>Icarus Solutions Pvt. Ltd.,</h3>
+		<h4>Minbhawan, Kathmandu</h4>
+		<h6>Mobile: +977 - 9851 - ****** 
+		<br /> +977 - 9841 - ****** </h6>
+		
+		<ul class="img-rounded ex1">
+        <a href="#"><img src="pictures/facebook.png" width="20" height="20"></a>
+        <a href="#"><img src="pictures/twitter.png" width="20" height="20"></a>
+        <a href="#"><img src="pictures/linkedin.png" width="20" height="20"></a>
+	    <ul>
+		
+		</div>
+		
+	
+    </div>
+  </div>
+	
+		<div class="pull-right">
+		<h6 class="text-right">Copyright &copy;Icarus Solutions.All Rights Reserved. </h6>
+		</div>
+
+
+</div><!-- end of contacts-->
+
+
+	<div id="scrollbar" data-0="top:0%;margin-top:2px;" data-end="top:100%;margin-top:-52px;"></div>
+	
+
+
+	<script data-main="scripts/main" src="scripts/require.js"></script>
+
+	
+</div><!--end of content-->
+	 
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="//maps.google.com/maps/api/js?sensor=true"></script>
+<script>
+$(window).scroll(
+    {
+        previousTop: 0
+    }, 
+    function () {
+    var currentTop = $(window).scrollTop();
+    if (currentTop < this.previousTop) {
+        $(".sidebar em").text("Up"); /* optional for demo */
+        $(".navbar").show();
+    } else {
+        $(".sidebar em").text("Down");
+        $(".navbar").hide();
+    }
+    this.previousTop = currentTop;
+});
+</script>
+
+</html>

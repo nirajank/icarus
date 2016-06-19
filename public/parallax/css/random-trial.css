@@ -1,0 +1,62 @@
+/* general styles */
+html, body {
+  height: 100%;
+  width: 100%;
+}
+/* padded section */
+.pad-section {
+  padding: 50px 0;
+}
+.pad-section img {
+  width: 100%;
+}
+
+.glyphicon-adjust{
+font-size:30px;
+color:green;
+}
+/* .left-mar{
+margin-left:200px;
+}
+.top-mar{
+margin-top:20px;
+} */
+.lead{
+color:#ccc;
+text-align:left;
+}
+.icon-class{
+height:200px;
+width:200px;
+}
+
+
+#main-content{
+background: url(c:/boot/pictures/black.jpg) no-repeat center center fixed; 
+  display: table;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+ color:#fff;
+padding-top:30px;
+ padding-left:200px;}
+#empty{
+display:null;
+}
+#events{
+ background: url(c:/boot/pictures/voya25588bw.jpeg) no-repeat center center fixed; 
+ display: table;
+  height: 800px;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding:200px;
+  color:#fff;
+}

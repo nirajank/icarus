@@ -1,0 +1,81 @@
+/* general styles */
+html, body {
+  height: 100%;
+  width: 100%;
+}
+footer{
+background:#3F3939;
+color:#fff;
+}
+
+/* padded section */
+.pad-section {
+  padding: 50px 0;
+}
+.pad-section img {
+  width: 100%;
+}
+
+/* vertical-centered text */
+.text-vcenter {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.text-vcenter h1 {
+  font-size: 4.5em;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+.container-fluid{
+background:#3F3939;
+color:#fff;
+}
+
+#home {
+  background: url(c:/boot/pictures/CCAHP_0336.jpg) no-repeat center center fixed; 
+  display: table;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+ color:#fff;
+}
+#about{
+background:#3F3939;
+color:#fff
+}
+.event-info-bar{
+height:250px;
+width:100%;
+background:#F63939;
+padding:50px;
+padding-right:0px;
+border:#ccc solid 1px;
+}
+.glyphicon-calendar{
+font-size:34px;
+margin-top:20px;
+margin-left:50px;
+}
+.glyphicon-map-marker{
+font-size:34px;
+margin-top:20px;
+margin-left:50px;
+}
+
+#schedule{
+ background: url(c:/boot/pictures/Event-management.png) no-repeat center center fixed; 
+ display: table;
+  height: 800px;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}

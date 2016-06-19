@@ -1,0 +1,154 @@
+/* general styles */
+body {
+  height: 100%;
+  width: 100%;
+	background:#333;
+
+}
+
+
+/* padded section */
+.pad-section {
+  padding: 50px 0;
+}
+.pad-section img {
+  width: 100%;
+}
+.margins{
+margin-top:50px;
+margin-left:50px;
+margin-right:50px;
+
+z-index:50;
+
+}
+/* vertical-centered text */
+.text-vcenter {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.item{
+
+  vertical-align: middle;
+  margin-left:160px;
+}
+.navbar{
+background:#666666;
+
+}
+.text-vcenter h1 {
+  font-size: 4.5em;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+.borders{
+border:#ccc solid 1px;
+border-radius:2px;
+padding:10px;
+}
+.ex1 img{
+
+float:left;
+margin:15px;
+-webkit-transition: margin 0.5s ease-out;
+-moz-transition: margin 0.5s ease-out;
+-o-transition: margin 0.5s ease-out;
+}
+.ex1 img:hover{
+margin-top:5px;
+color:#333;
+}
+.collapse ul li a{
+color:white;
+}
+.collapse ul li a:hover{
+background:#fff;
+color:#333;
+border:#ccc solid 1px;
+border-radius:5px;
+}
+.navbar-toggle{
+background:#ccc;
+}
+h1,h2,h3, h4, h6{
+color:#fff;
+}
+
+/* additional sections */
+#home {
+ 
+  display: table;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+ color:#fff;
+}
+
+ #about {
+background:#c3c3c3;
+  
+}
+#team {
+background:#c3c3c3;
+  
+}
+
+#services {
+  background-color: #333;
+  color: #ffffff;
+  
+}
+#services .glyphicon {
+  border: 2px solid #FFFFFF;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 60px;
+  height: 140px;
+  line-height: 140px;
+  text-align: center;
+  vertical-align: middle;
+  width: 140px;
+}
+
+#products {
+  background: url(c:/boot/pictures/software-products.jpg) no-repeat center center fixed; 
+  display: table;
+  height: 800px;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#products .panel {
+  opacity: 0.85;
+}
+
+#google_map {
+  height: 200px;
+ 
+}
+
+footer {
+  height:50px;
+  width:100%;
+  padding:10px;
+  background:#666666;
+  color:#333;
+  
+}
+footer .glyphicon {
+  color: #333333;
+  font-size: 60px;
+}
+footer .glyphicon:hover {
+  color: #306d9f;
+}

@@ -1,0 +1,136 @@
+*{
+margin:0px auto;
+padding:0px;}
+body{
+font-family:Arial;
+font-size:14px;
+background: #fff;
+width:1300px;
+}
+
+#left-col{
+margin-left:70px;
+margin-top:70px;
+width:300px;
+float:left;
+}
+
+.logo{
+width:50px;
+height:50px;
+}
+
+.glyphicon-search{
+
+width:20px;
+height:20px;
+}
+.glyphicon-leaf{
+margin:20px;
+margin-left:50px;
+}
+.dashboards{
+margin-top:20px;
+}
+.more{
+margin-top:20px;
+}
+.nav li a:hover{
+background:#a0a0a0;
+}
+
+
+#right-col{
+margin-top:70px;
+margin-left:30px;
+float:left;
+width:900px;
+}
+.note{
+text-align:left;
+color:#c3c3c3;
+margin-left:100px;
+}
+.overview{
+font-size:32px;
+}
+.row{
+margin-top:20px;
+}
+.block{
+border-bottom:#c3c3c3 solid 1px;
+}
+.glyphicon-calendar{
+
+width:20px;
+height:20px;
+
+}
+.tz {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    background-color: #1e2127;
+}
+.panel-body{
+margin-left:-15px;
+margin-bottom:-15px;
+
+}
+.list-group{
+margin-top:20px;
+
+}
+.list-group a:hover{
+background:#a0a0a0;
+}
+.list-group-item{
+
+color:#c3c3c3;
+
+}
+.row button:hover{
+background:#1997c6;
+}
+/* icon-nav */
+#left-column{
+width:100px;
+float:left;
+height: 1250px;
+background:#363636;
+
+ 
+}
+.button{
+width:20px;
+height:20px;
+margin:20px;
+border:#ccc solid 1px;
+border-radius:2px;
+}
+.icon{
+width:40px;
+height:40px;
+
+}
+.nav-icon{
+margin:20px;
+margin-left:15px;
+}
+ #right-column{
+ width:1150px;
+ float:left;
+ margin-left:50px;
+ margin-top:50px;
+ }
+ .btn-grp-vertical{
+ background:#252830;
+ }
+ 
+ /* order history*/
+ .pagination{
+color:#252830;
+ }
